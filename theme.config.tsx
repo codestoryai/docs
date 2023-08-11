@@ -1,18 +1,23 @@
-import React from 'react'
-import { DocsThemeConfig } from 'nextra-theme-docs'
+import React from "react";
+import { DocsThemeConfig } from "nextra-theme-docs";
+import Image from "next/image";
 
 const config: DocsThemeConfig = {
-  logo: <span>My Project</span>,
-  project: {
-    link: 'https://github.com/shuding/nextra-docs-template',
-  },
+  logo: (
+    <Image
+      src="/assets/cs-logomark.png"
+      alt="CodeStory logo"
+      width={48}
+      height={48}
+    />
+  ),
+  primaryHue: 161,
   chat: {
-    link: 'https://discord.com',
+    link: "https://discord.gg/4JXfX5YR",
   },
-  docsRepositoryBase: 'https://github.com/shuding/nextra-docs-template',
   footer: {
-    text: 'Nextra Docs Template',
+    text: "CodeStory",
   },
-}
+};
 
-export default config
+export default config;

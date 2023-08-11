@@ -1,7 +1,7 @@
 {
-  "index": "Introduction",
-  "another": "Another Page",
-  "advanced": "Advanced (A Folder)",
+  "index": "👋 Welcome",
+  "onboarding": "🚀 Getting started",
+  "features": "💻 Features",
   "about": {
     "title": "About",
     "type": "page"
