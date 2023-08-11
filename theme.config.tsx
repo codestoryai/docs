@@ -4,12 +4,15 @@ import Image from "next/image";
 
 const config: DocsThemeConfig = {
   logo: (
-    <Image
-      src="/assets/cs-logomark.png"
-      alt="CodeStory logo"
-      width={48}
-      height={48}
-    />
+    <div style={{ display: "flex", alignItems: "center" }}>
+      <Image
+        src="/assets/cs-logomark.png"
+        alt="CodeStory logo"
+        width={48}
+        height={48}
+      />
+      <h1 style={{ fontSize: 24, fontWeight: "bold" }}>CodeStory</h1>
+    </div>
   ),
   primaryHue: 161,
   chat: {
@@ -17,6 +20,12 @@ const config: DocsThemeConfig = {
   },
   footer: {
     text: "CodeStory",
+  },
+  editLink: {
+    text: "",
+  },
+  feedback: {
+    content: "",
   },
 };
 

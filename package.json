@@ -1,22 +1,18 @@
 {
-  "name": "nextra-docs-template",
+  "name": "codestory-docs",
   "version": "0.0.1",
-  "description": "Nextra docs template",
+  "description": "CodeStory docs",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/shuding/nextra-docs-template.git"
-  },
-  "author": "Shu Ding <g@shud.in>",
+  "author": "CodeStory <founders@codestory.ai>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/shuding/nextra-docs-template/issues"
+    "url": "https://discord.gg/4JXfX5YR"
   },
-  "homepage": "https://github.com/shuding/nextra-docs-template#readme",
+  "homepage": "https://codestory.ai",
   "dependencies": {
     "next": "^13.0.6",
     "next-videos": "^1.4.1",
