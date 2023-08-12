@@ -1,8 +1,12 @@
 {
   "index": "👋 Welcome",
   "onboarding": "🚀 Getting started",
-  "about": {
-    "title": "About",
-    "type": "page"
+  "features": "🎨 Features",
+  "pull-requests": "👾 GitHub PR bot",
+  "website": {
+    "title": "Website",
+    "type": "page",
+    "href": "https://codestory.ai",
+    "newWindow": true
   }
 }
