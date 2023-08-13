@@ -1,12 +1,37 @@
+import { useState, useEffect } from "react";
+
 import { Button } from "../components/button";
 
 # Welcome to CodeStory
 
 Aide by CodeStory ✨ is an AI-powered mod of VSCode. Imagine a developer tasked with solving a bug, CodeStory can scan the codebase, identify the root cause, make the fix and auto-generate tests to evaluate whether the bug was resolved.
 
+export const DownloadButton = () => {
+  const [release, setRelease] = useState([]);
+
+  useEffect(() => {
+    fetch("https://api.github.com/repos/codestoryai/binaries/releases")
+      .then((res) => res.json())
+      .then((releases) => {
+        setRelease(releases[0]);
+      });
+  }, []);
+
+  return (
+    <div style={{ display: "flex", justifyContent: "center" }}>
+      <a
+        href={release?.assets?.[0]?.browser_download_url}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Button>Download for MacOS (Apple Silicon)</Button>
+      </a>
+    </div>
+  );
+};
+
 <br />
-<div style={{ display: "flex", justifyContent: "center" }}>
-  <Button>Download for MacOS (Apple Silicon)</Button>
-</div>
+
+<DownloadButton />
 
 ![CodeStory Intro](../public/images/aide.png)
