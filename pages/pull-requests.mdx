@@ -1,25 +1,7 @@
-## Local models support and no telemetry collection
+# GitHub PR summary bot
 
-### Run with ollama
-You can run Aide locally without sending over any data outside your computer. To do so first:
+While this is not (yet) a core part of the IDE, our summary bot leaves a summary with impact analysis on your Pull Requests.
 
-1. Install ollama by visiting this webpage: https://ollama.ai/install
+![Sample summary](/images/prbot.png)
 
-2. Run any of the local models (we recommend using `wizardcoder:13b-python` or `codellama:latest`)
-```
-ollama run wizardcoder:13b-python
-```
-and in another window run:
-```
-ollama serve
-```
-
-3. In Aide go to your settings and search for codestory and set the local model address to the path which was shown by `ollama serve` 
-
-
-4. Disable all telemetry collection in settings by following this [link](https://code.visualstudio.com/docs/getstarted/telemetry#:~:text=Disable%20telemetry%20reporting,-With%20the%20telemetry&text=From%20File%20%3E%20Preferences%20%3E%20Settings%2C,when%20you%20disable%20the%20setting.) or by setting the following in your USER settings json
-```
-{
-    "telemetry.telemetryLevel": "off"
-}
-```
+In order to try it out, navigate to the GitHub App page, [codestorybetabot](https://github.com/apps/codestorybetabot) and click _Configure_ to add it to your repository.
