@@ -5,8 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "postbuild": "rm -rf .next/cache"
+    "start": "next start"
   },
   "author": "CodeStory <founders@codestory.ai>",
   "license": "MIT",
