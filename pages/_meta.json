@@ -3,12 +3,9 @@
   "onboarding": "🚀 Getting started",
   "features": "🎨 Features",
   "extensions": "🔌 Downloading extensions",
-  "troubleshooting": "🔧 Troubleshooting",
-<<<<<<< Updated upstream
   "local-models": "🦙 Local model support",
-=======
+  "troubleshooting": "🔧 Troubleshooting",
   "pull-requests": "👾 GitHub PR bot",
->>>>>>> Stashed changes
   "website": {
     "title": "Website",
     "type": "page",
