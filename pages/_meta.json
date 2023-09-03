@@ -2,9 +2,13 @@
   "index": "👋 Welcome",
   "onboarding": "🚀 Getting started",
   "features": "🎨 Features",
-  "pull-requests": "👾 GitHub PR bot",
+  "extensions": "🔌 Downloading extensions",
   "troubleshooting": "🔧 Troubleshooting",
+<<<<<<< Updated upstream
   "local-models": "🦙 Local model support",
+=======
+  "pull-requests": "👾 GitHub PR bot",
+>>>>>>> Stashed changes
   "website": {
     "title": "Website",
     "type": "page",
