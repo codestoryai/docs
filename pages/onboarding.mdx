@@ -4,6 +4,8 @@ Aide by CodeStory is currently in **alpha stage**, and supports only **JS/TS pro
 
 ## Installation
 
+### MacOS
+
 1. Head to CodeStory's [releases page](https://github.com/codestoryai/binaries/releases) and download the latest version of Aide.
 
    ![Releases page](../public/images/installation/download_page.png)<br/>
@@ -17,6 +19,43 @@ Aide by CodeStory is currently in **alpha stage**, and supports only **JS/TS pro
 4. You should see the welcome screen.
 
    ![Welcome screen](../public/images/installation/welcome_screen.png)
+
+### Linux
+
+1. Download the Linux release from the [releases page](https://github.com/codestoryai/binaries/releases).
+2. Create a folder called `aide` under `/usr/share`, using `sudo mkdir -p /usr/share/aide`.
+3. Extract the downloaded file using `sudo tar -xvzf <filename>.tar.gz -C /usr/share/aide`.
+4. Create a desktop file at `/usr/share/applications/aide.desktop` with the following contents:
+```
+[Desktop Entry]
+Name=Aide
+Comment=AI-first code editor
+GenericName=Text Editor
+Exec=/usr/share/aide/aide --unity-launch %F
+Icon=vscode
+Type=Application
+StartupNotify=false
+StartupWMClass=Aide
+Categories=TextEditor;Development;IDE;
+MimeType=text/plain;inode/directory;application/x-code-workspace;
+Actions=new-empty-window;
+Keywords=aide;
+
+[Desktop Action new-empty-window]
+Name=New Empty Window
+Name[de]=Neues leeres Fenster
+Name[es]=Nueva ventana vacía
+Name[fr]=Nouvelle fenêtre vide
+Name[it]=Nuova finestra vuota
+Name[ja]=新しい空のウィンドウ
+Name[ko]=새 빈 창
+Name[ru]=Новое пустое окно
+Name[zh_CN]=新建空窗口
+Name[zh_TW]=開新空視窗
+Exec=/usr/share/aide/aide --new-window %F
+Icon=vscode
+```
+5. You should now be able to access Aide from your application launcher.
 
 ## Known limitations
 
