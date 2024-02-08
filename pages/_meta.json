@@ -4,6 +4,7 @@
   "features": "🎨 Features",
   "extensions": "🔌 Downloading extensions",
   "local-models": "🦙 Local model support",
+  "custom-llm-endpoint": "⚙️ Custom LLM Endpoint",
   "troubleshooting": "🔧 Troubleshooting",
   "pull-requests": "👾 GitHub PR bot",
   "website": {
