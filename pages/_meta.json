@@ -1,16 +1,17 @@
 {
-  "index": "👋 Welcome",
-  "onboarding": "🚀 Getting started",
-  "features": "🎨 Features",
-  "extensions": "🔌 Downloading extensions",
-  "local-models": "🦙 Local model support",
-  "custom-llm-endpoint": "⚙️ Custom LLM Endpoint",
-  "troubleshooting": "🔧 Troubleshooting",
-  "pull-requests": "👾 GitHub PR bot",
-  "website": {
-    "title": "Website",
-    "type": "page",
-    "href": "https://codestory.ai",
-    "newWindow": true
-  }
+    "index": "👋 Welcome",
+    "onboarding": "🚀 Getting started",
+    "features": "🎨 Features",
+    "extensions": "🔌 Downloading extensions",
+    "local-models": "🦙 Local model support",
+    "custom-llm-endpoint": "⚙️ Custom LLM Endpoint",
+    "tab-autocomplete": "🔜 Tab autocomplete",
+    "troubleshooting": "🔧 Troubleshooting",
+    "pull-requests": "👾 GitHub PR bot",
+    "website": {
+        "title": "Website",
+        "type": "page",
+        "href": "https://codestory.ai",
+        "newWindow": true
+    }
 }
