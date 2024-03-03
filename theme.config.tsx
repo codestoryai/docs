@@ -27,7 +27,7 @@ const config: DocsThemeConfig = {
   ),
   primaryHue: 161,
   chat: {
-    link: "https://discord.gg/4JXfX5YR",
+    link: "https://discord.gg/FdKXRDGVuz",
   },
   footer: {
     text: "CodeStory",
