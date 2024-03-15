@@ -37,3 +37,18 @@ MacOS issues a standard warning when an app is downloaded from the internet rath
 	alt="Open confirmation"
 	/>
 </p>
+
+
+### MacOS ReadonlyFS warning
+If Aide throws a readonly mount error, then you need to manually navigate to the folder where Aide was downloaded and move it to Applications.
+This generally happens because of [App Translocation](https://forums.developer.apple.com/forums/thread/724969), this a macos protection mechanism to prevent
+unauthroized code execution when downloading the application for the first time.
+Since Aide ships with the AI brains (sidecar) locally, we want to have permissions to execute the binary, but Apple's App Translocation forbids that.
+
+To fix:
+- Go to your finder
+- Find the downloaded Aide app
+- Move it manually through the Finder to Applications.
+- Start Aide after clicking in the Application folder.
+
+If you are still stuck please reach out on https://discord.com/invite/mtgrhXM5Xf so we can debug this launch error.
