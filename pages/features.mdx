@@ -1,8 +1,8 @@
 # Features
 
-## 💫 Debug & explore
+## All Features
 
-Describe an issue in your Codebase and let the AI agent navigate, identify, resolve and test the fix.
+Aide provides AI tooling to help you stay in flow and help you writer code better and faster. Check out all the AI features we provide in the video below:
 
 <div
   style={{
@@ -22,44 +22,34 @@ Describe an issue in your Codebase and let the AI agent navigate, identify, reso
       left: 0,
       top: 0,
     }}
-    src="https://www.youtube.com/embed/VmaQFjNJiAk"
-    title="Debugging in the editor"
+    src="https://www.youtube.com/watch?v=i8ZXMgnFSo8"
+    title="AI features in the editor"
     frameBorder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
     allowFullScreen
   />
 </div>
 
-## 🔎 Natural language search
+## ⌨️ Tab autocomplete
 
-Can't remember a particular class or method name? Just describe it in a few words!
+Tab-autocomplete works by autocompleting the code as you are typing it out. One of the best parts of the tab-autocomplete is that we not only
+look at your open files, but also walk the dependency tree using the Language Server and use Tree-sitter for parsing the codes into recognisable
+chunks. This helps us collect the type definitions of the various identifiers in your code, providing a richer and syntatically-correct auto-complete experience.
 
-**How to access:** You can access this by opening the CodeStory extension from the sidebar and using the text area at the top to search.
+![Tab-autocomplete](../public/images/tab_autcomplete_experience.jpg)
 
-![Natural language search](../public/images/nlp-search.png)
+## 🖥️ Inline code generation
 
-## 🥽 Grouped git diffs
+Often times making quick changes to the code is equivalent to deleting or commenting out code, writing a comment, letting copilot autocomplete it and fixing things.
+Instead you can call the inline code-editor using `Cmd/Cntrl + I` and give it instructions, you stay in flow and review the work done by the AI.
 
-See a visual summary of related changes since your last commit.
+![Inline code generation](../public/images/chat_experience.jpg)
 
-**How to access:** You can access this by opening the CodeStory extension from the sidebar. The _CHANGES YOU HAVE MADE_ section will auto-populate with your changes.
+## 💬 Sidebar chat
 
-![Grouped git diffs](../public/images/git-diff.png)
-
-## ✍ ️ Commit message helper
-
-Writing good commit messages is hard — we do half the work by speaking about the 'what', so you can focus on the 'why'.
-
-**How to access:** In the sidebar extension, click on the _COMMIT_ button when you're ready to commit your changes. You can then select the files you want to commit and write your commit message.
-
-## 🪄 One-click migration from VSCode
-
-All your VSCode settings & extensions can be imported in a single step.
-
-**How to access:** See the [getting started guide](/onboarding#importing-vscode-settings) for more details.
-
-![VSCode migration](../public/images/ide-replacement.png)
-
+Sidebar chat is your powerful AI assistance which can reason across files and knows quite a lot about your codebase. Give it references using `Cmd/Cntrl + L` in the editor and ask it your burning
+programming questions. You can use the most powerful coding models like Claude Opus and GPT4 for their powerful code understanding. Even more, yoc can host models on your infrastructure as well. See our list
+of supported providers to navigate the selection process.
 
 ## 📦 CodeStory Provider
 
@@ -70,3 +60,11 @@ You can use the CodeStory provider to try out different LLM models and get acces
 Select the CodeStory Provider as shown below:
 
 ![CodeStory Provider](../public/images/codestory-provider.png)
+
+## 🪄 One-click migration from VSCode
+
+All your VSCode settings & extensions can be imported in a single step.
+
+**How to access:** See the [getting started guide](/onboarding#importing-vscode-settings) for more details.
+
+![VSCode migration](../public/images/ide-replacement.png)
