@@ -14,11 +14,11 @@ Aide by CodeStory is currently in **alpha stage**, and supports only **JS/TS pro
 
    ![Drag to Applications folder](../public/images/installation/move_to_applications.png)<br/>
 
-3. Open Aide from your Applications folder. Use the troubleshooting instructions if you see a warning that [the developer is unidentified](/troubleshooting#unidentified-developer) or that [the app is downloaded from the internet](/troubleshooting#app-downloaded-from-the-internet). 
+3. Open Aide from your Applications folder. Use the troubleshooting instructions if you see a warning that [the developer is unidentified](/troubleshooting#unidentified-developer) or that [the app is downloaded from the internet](/troubleshooting#app-downloaded-from-the-internet).
 
 4. You should see the welcome screen.
 
-   ![Welcome screen](../public/images/installation/welcome_screen.png)
+   ![Welcome screen](../public/images/welcome_page_new.png)
 
 ### Linux
 
@@ -26,6 +26,7 @@ Aide by CodeStory is currently in **alpha stage**, and supports only **JS/TS pro
 2. Create a folder called `aide` under `/usr/share`, using `sudo mkdir -p /usr/share/aide`.
 3. Extract the downloaded file using `sudo tar -xvzf <filename>.tar.gz -C /usr/share/aide`.
 4. Create a desktop file at `/usr/share/applications/aide.desktop` with the following contents:
+
 ```
 [Desktop Entry]
 Name=Aide
@@ -55,6 +56,7 @@ Name[zh_TW]=開新空視窗
 Exec=/usr/share/aide/aide --new-window %F
 Icon=vscode
 ```
+
 5. You should now be able to access Aide from your application launcher.
 
 ## Known limitations
@@ -65,23 +67,18 @@ At this point in time, a lot of the core functionality is implemented as a VSCod
 2. If a large project is opened, the extension might take a while to load since the indexing process is currently synchronous.
 3. Before running any CodeStory commands, the extension needs to be explicitly activated by clicking on the CodeStory icon in the VSCode status bar.
 
-## Importing VSCode settings
+## Importing VSCode settings and settings
 
 Aide supports importing all your settings and extensions from VSCode. In order to do so,
 
-1. Open a JS/TS project folder.
+1. Click on Import Extensions and Settings from VSCode
 
-   ![Open folder](../public/images/installation/open_folder.png)<br/>
+   ![Open folder](../public/images/import_settings.png)<br/>
 
-2. Press `Cmd + Shift + P` to open the command palette and search for `Import settings and keybindings from VSCode`. Hit enter to run the command.
+2. Once you see the notification that your extensions and settings has been imported (takes 10 seconds), you should see a notification.
 
-   ![Import VSCode settings](../public/images/installation/import.png)<br/>
-
-3. Aide will now import all your settings and extensions from VSCode. This might take a while depending on the number of extensions you have installed in VSCode
-4. Once complete, your should see a notification that the import was successful.
-
-   ![Copy complete](../public/images/installation/copied.png)<br/>
-
-5. Reload Aide by pressing `Cmd + Shift + P` and selecting `Developer: Reload window` from the command palette. All your settings and extensions should now be available in Aide.
+3. Reload Aide by pressing `Cmd + Shift + P` and selecting `Developer: Reload window` from the command palette. All your settings and extensions should now be available in Aide.
 
    ![Reload window](../public/images/installation/reload.png)
+
+PS: If you can not find the login page use `cmd/cntr + shift + P` and search for 'Welcome: Open Walkthrough...` and Select Aide walkthrough
