@@ -3,9 +3,6 @@ title: Migrate from VS Code
 description: Steps to migrate from VSCode to Aide
 ---
 
-Guides lead a user through a specific task they want to accomplish, often with a sequence of steps.
-Writing a good guide requires thinking about what your users are trying to do.
+In your command pallete (Cmd/Cntrl + Shift + P) search for `CodeStory: Import settings and keybindings from VSCode`. This will automagically start importing your settings and keybindings from VSCode to Aide.
 
-## Further reading
-
-- Read [about how-to guides](https://diataxis.fr/how-to-guides/) in the Diátaxis framework
+   ![Importing settings](../../../assets/import_settings_editor.png)<br/>

@@ -26,9 +26,9 @@ export default defineConfig({
 					autogenerate: { directory: 'get-started' },
 				},
 				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
-				},
+					label: 'LLM Configuration',
+					autogenerate: { directory: 'model-configuration' },
+				}
 			],
 			customCss: [
 				'./src/styles/custom.css',
