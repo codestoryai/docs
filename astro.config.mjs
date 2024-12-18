@@ -9,10 +9,10 @@ export default defineConfig({
 		starlight({
 			title: 'Aide',
 			logo: {
-				alt: 'Aide',
-				replacesTitle: true,
 				dark: '/src/assets/logo-dark.png',
 				light: '/src/assets/logo-light.png',
+				alt: 'Aide',
+				replacesTitle: true,
 			},
 			favicon: '/favicon.png',
 			social: {
@@ -42,10 +42,10 @@ export default defineConfig({
 					lang: 'en',
 				},
 			},
+			disable404Route: true,
 		}),
 	],
 	redirects: {
 		'/': '/get-started/migrate-from-vscode',
-		'[...404]': '/get-started/migrate-from-vscode'
-	},
+	}
 });
