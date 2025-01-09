@@ -1,0 +1,29 @@
+---
+title: Providing context
+description: Different kinds of context that can be provided to the LLM
+---
+
+import { Image } from "astro:assets";
+import attachingContext from "../../../assets/attachments/attaching-context.png";
+import attachingFiles from "../../../assets/attachments/attaching-files.png";
+import attachingCode from "../../../assets/attachments/attaching-code.png";
+
+### `@` symbols
+
+Aide provides an easy way to attach context that would be useful for the LLM to answer your query. You can access this within the assistant panel input by either clicking on the pin icon at the bottom left of the input, or by pressing `@`.
+
+<Image src={attachingContext} alt="Screenshot of the context attachment completion list in the assistant panel input" />
+
+You can navigate through the list of suggestions using the up/down arrow keys, and hit Enter to select a suggestion. If the suggestion is a category, such as 'Code' or 'File', the suggestions will be filtered to only show the most relevant items within that category.
+
+##### `@File`
+
+When you select the 'File' category from the suggestions list, you will see a list of all the files in your workspace as suggestions. You can also see the path the file lies within, which could be handy when filtering for files with the same name across different directories.
+
+<Image src={attachingFiles} alt="Screenshot of the file attachments completion list" />
+
+##### `@Code`
+
+When you select the 'Code' category from the suggestion list, you will see the list of code symbols that are present in your workspace as suggestions. This list is dependent on the appropritate language server extensions being installed for the codebase you're currently working with. You can also see the path the code symbol lies within, which could be handy when looking for code symbols that could be present in multiple locations in your codebase.
+
+<Image src={attachingCode} alt="Screenshot of the code symbols attachments completion list" />
