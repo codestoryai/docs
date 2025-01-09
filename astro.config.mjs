@@ -22,8 +22,8 @@ export default defineConfig({
 			},
 			sidebar: [
 				{
-					label: 'Get Started',
-					autogenerate: { directory: 'get-started' },
+					label: 'Aide',
+					autogenerate: { directory: 'aide' },
 				},
 				{
 					label: 'LLM Configuration',
@@ -46,6 +46,6 @@ export default defineConfig({
 		}),
 	],
 	redirects: {
-		'/': '/get-started/migrate-from-vscode',
+		'/': '/aide/setting-up',
 	}
 });
