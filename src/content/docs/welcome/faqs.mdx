@@ -1,0 +1,36 @@
+---
+title: FAQs
+description: Frequently asked questions about Aide
+---
+
+import { Aside } from '@astrojs/starlight/components';
+
+<Aside type="tip">
+If you're seeing any issues when running Aide, please refer to the [Troubleshooting](/troubleshooting/common-issues) section.
+</Aside>
+
+### Billing & subscriptions
+
+##### What models do I get access to as part of the Pro subscription?
+
+At the time of this writing (9th Jan, 2025), we currently offer the following models as part of our pro subscription:
+- Anthropic: Claude 3.5 Sonnet, Claude 3.5 Haiku
+- OpenAI: GPT-4o, o1-mini
+- Google: Gemini 1.5 Pro
+- DeepSeek: DeepSeek-V3
+
+##### Does the Pro plan really offer unlimited invocations for Claude Sonnet 3.5?
+
+Yes, really! Keeping a simple pricing plan which doesn't limit our users at any point during their usage arbitrarily seems like the cleanest way to offer the best experience for users.
+
+At the time of this writing (9th Jan, 2025), we're still early in terms of growth as a team and product and our highest priority rn is to understand what our core value to users is, and get crucial early feedback from them. Even if we burn some money on the way to finding those answers, it would be well worth it. In fact, if someone gets 10x the value by using our product, that's just fab news for us because it would mean Aide has become a stable daily driver and doesn't have any glaring foundational issues.
+
+So we see this as a great subsidy for early users, and an indicator of the value they see in the product for us - and that's a win-win in my books.
+
+##### What counts as an invocation?
+
+Any time you send a message in the assistant panel, regardless of the mode, and get a successful response, it is counted as an invocation. A successful response would simply be defined as the LLM completing it's task without erroring out itself. The accuracy of your task's completion itself is dependent on the several factors, and don't affect invocations in any way.
+
+##### Beyond 50 free invocations every month, do I need to pay even if I'm using my own API key?
+
+Yes. Regardless of whether you use the CodeStory provider or your own API keys, every invocation counts towards your monthly usage. We have it this way primarily so we're able to identify users who are getting the most value from the product so we can support them best, and also have the subscription support our development efforts.

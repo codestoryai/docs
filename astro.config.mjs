@@ -22,12 +22,19 @@ export default defineConfig({
 			},
 			sidebar: [
 				{
-					label: 'Aide',
-					autogenerate: { directory: 'aide' },
+					label: 'Welcome',
+					items: [
+						'welcome/setting-up',
+						'welcome/faqs'
+					]
 				},
 				{
-					label: 'LLM Configuration',
-					autogenerate: { directory: 'model-configuration' },
+					label: 'Features',
+					autogenerate: { directory: 'features' },
+				},
+				{
+					label: 'Troubleshooting',
+					autogenerate: { directory: 'troubleshooting' }
 				}
 			],
 			customCss: [
@@ -46,6 +53,6 @@ export default defineConfig({
 		}),
 	],
 	redirects: {
-		'/': '/aide/setting-up',
+		'/': '/welcome/setting-up',
 	}
 });

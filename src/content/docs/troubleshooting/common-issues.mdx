@@ -1,0 +1,25 @@
+---
+title: Common issues
+description: A list of common issues with Aide, and how to debug them
+---
+
+import { Aside } from "@astrojs/starlight/components";
+import { Image } from "astro:assets";
+import rageShake from "../../../assets/rage-shake.png";
+
+<Aside type="tip">
+  The best place to report issues not covered on this page is to use the 'Give
+  feedback' button at the top right of the editor. All issues reported here get sent to the team's Discord channel for investigation.
+  <Image
+    src={rageShake}
+    alt="Screenshot of the feedback tool within Aide"
+  />
+</Aside>
+
+### I'm not getting a response from the LLM
+
+We've currently seen that the LLM fails to respond for one of two main reasons, both of which we aim to solve at our end soon. The first reason is that there was an issue during the editor setup on your machine. The latter could be that we're hitting rate limits on our end.
+
+For both cases, we'd be able to help you out if you can reach out to us on our [Discord](https://discord.gg/mtgrhXM5Xf). Please have a copy of the console logs handy when you're experiencing this errors. Console logs can be retrieved by opening the command palette (using `⌘+Shift+P` on macOS or `Ctrl+Shift+P` on other systems), and looking at the 'Console tab'.
+
+This is one of the items I personally hope to remove from this page soon!
