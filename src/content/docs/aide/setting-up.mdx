@@ -3,14 +3,19 @@ title: Getting started
 description: The open-source AI-native IDE
 ---
 
-import { Code } from '@astrojs/starlight/components';
-import { LinkButton } from '@astrojs/starlight/components';
-import { Steps } from '@astrojs/starlight/components';
-import { Tabs, TabItem } from '@astrojs/starlight/components';
+import { Code } from "@astrojs/starlight/components";
+import { LinkButton } from "@astrojs/starlight/components";
+import { Steps } from "@astrojs/starlight/components";
+import { Tabs, TabItem } from "@astrojs/starlight/components";
+import { Image } from 'astro:assets';
+import demoVideo from '../../../assets/demo.gif';
+import importStep1 from '../../../assets/import/import-1.png';
 
-Aide is the Open Source AI-native code editor. It is a fork of VS Code, and integrates tightly with [the leading agentic framework](https://github.com/codestoryai/sidecar) on swebench-lite. On this page, you’ll find instructions on how to install Aide on your computer and get back to coding with AI superpowers.
+Aide is the Open Source AI-native code editor. It is a fork of VS Code, and integrates tightly with [the leading agentic framework](https://github.com/codestoryai/sidecar) on swebench-lite. On this page, you&apos;ll find instructions on how to install Aide on your computer and get back to coding with AI superpowers.
+<Image src={demoVideo} alt="A short demo of the Aide agent." />
 
 ## Installation
+
 Aide is lightweight and should easily run on today's hardware. We distribute pre-build binaries for all major Operating Systems.
 
 <Tabs>
@@ -20,6 +25,7 @@ Aide is lightweight and should easily run on today's hardware. We distribute pre
       <LinkButton href="https://aide.dev">Download from the website</LinkButton>
 
       When updates are available, you will see a notification on the settings icon in the activity bar or the title bar. You can also check for updates manually by clicking on the settings icon and selecting "Check for updates...".
+
    </TabItem>
    <TabItem label="Windows">
       Supported on Windows 10 and 11 (64-bit)
@@ -27,6 +33,7 @@ Aide is lightweight and should easily run on today's hardware. We distribute pre
       <LinkButton href="https://aide.dev">Download from the website</LinkButton>
 
       When updates are available, you will see a notification on the settings icon in the activity bar or the title bar. You can also check for updates manually by clicking on the settings icon and selecting "Check for updates...".
+
    </TabItem>
    <TabItem label="Linux">
       Just copy and run this command in your terminal:
@@ -37,10 +44,14 @@ Aide is lightweight and should easily run on today's hardware. We distribute pre
       Aide is supported on all Linux distros. Minimum requirements:
       - GLIBCXX version 3.4.25 or later
       - GLIBC version 2.28 or later
+
    </TabItem>
 </Tabs>
 
 ## Setting up
+
 ### Import settings, keybindings and extensions from VSCode/Cursor/Windsurf/VSCodium
 
 Aide supports importing all your settings and extensions from VSCode and it's forks. In order to do so, use the command palette (accessed by pressing `⌘ + Shift + P` on macOS and `Ctrl + Shift + P` otherwise) and search for 'Import settings, extensions and keybindings from a VSCode-based editor'. Once you select this, Aide will give you the option to choose your previous editor, and start the import.
+
+<Image src={importStep1} alt="Screenshot of the import option in the command palette." />
