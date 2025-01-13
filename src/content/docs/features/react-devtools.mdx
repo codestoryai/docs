@@ -30,6 +30,8 @@ Run your client-side rendered app on a local dev server.
 
 If you enabled this feature, you will see a the browser icon in the assistant view top-right actions. Click it, and insert the localhost url and port of your dev server in the command palette that opens.
 
+Make sure you are opening a dev server from the relevant workspace (e.g.: if your portfolio project is being served locally, make sure to open the portfolio workspace on Aide.). The devtools may return relative paths that work only when the correct workspace is open. 
+
 ![A dev server has started for the project](../../../assets/devtools/dev_server_started.png)
 
 > Start your dev server
@@ -59,9 +61,8 @@ At this point, if the devtools pick up React, you will see an inspect icon in th
 We currently use the symbolicated source of a component in order to find the file on the system that corresponds to the React component, and the line range of what part of the underlying JSX was actually clicked.
 This has a few implications:
 
-1. A source map needs to be present in order to get get the symbolicated source of a React component.
-2. The app needs to be client-rendered, since we can't currently easily get the path of a server component.
-3. If the app has thousands of components with several wrapper levels, it's possible you are going to click on the last levels of these trees, which may not necessarily be the most relevant component.
-4. You will have to navigate using URLs in the web view instead of clicking around your app links.
+1. A [source map](https://web.dev/articles/source-maps) needs to be present in order to get get the symbolicated source of a React component.
+2. The app needs to be client-rendered, since we currently can't easily get the path of a server component.
+3. You will have to navigate using URLs in the web view instead of clicking around your app links.
 
 We know these are hard limitations, but we are working to remove them and improve both your experience and the value you can get out of this feature.
