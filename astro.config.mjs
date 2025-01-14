@@ -33,6 +33,10 @@ export default defineConfig({
 					autogenerate: { directory: 'features' },
 				},
 				{
+					label: 'Experimental',
+					autogenerate: { directory: 'experimental' },
+				},
+				{
 					label: 'Troubleshooting',
 					autogenerate: { directory: 'troubleshooting' }
 				}
