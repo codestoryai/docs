@@ -8,27 +8,32 @@ import { Image } from "astro:assets";
 
 ## Supported projects
 
-Currently, we only support React projects that use client-side rendering and expose a [source map](https://web.dev/articles/source-maps) in their output. For example, if you are using [Vite](https://vite.dev), make sure you are client-side rendering and either run your app in development mode or [enable source maps in your build](https://vite.dev/config/build-options.html#build-sourcemap).
+We have first-class support for projects built on [Vite](https://vite.dev), including Vite-based frameworks like [Remix](https://remix.run).
 
-## Enabling this feature
+## Getting started
 
-Open Aide user settings (JSON) in the Command Palette by pressing `Ctrl` + `Shift`+ `P` (`Cmd` + `Shift`+ `P` on Mac), and set `"aide.enableInspectWithDevtools"` to `true`.
+This feature is enabled automatically if Aide detects React in your package.json.
 
-```json
-"aide": {
-    "enableInspectWithDevtools": false
-}
-```
+Open your `vite.config` in Aide and click the button that reads "Add Vite plugin". This will automatically install the [`@codestoryai/component-tagger`](https://www.npmjs.com/package/@codestoryai/component-tagger) npm package add the plugin to your Vite configuration.
 
-A button with a browser icon should now appear in the top-right corner of the assistant panel, next to the "New session" (plus icon) and "Previous sessions" (clock icon) buttons.
+You can also open the command palette by pressing `Ctrl` + `Shift`+ `P` (`Cmd` + `Shift`+ `P` on Mac) and type "Add Vite plugin" for a more granular installation.
 
-![Assistant actions after enabling the feature](../../../assets/devtools/feature_enabled.png)
+> **This plugin will only run in your "serve" configuration and will not make a difference in your production builds.**
+
+If your project is not based on Vite, or you don't want to add any plugins to your build step, you can still use our agentic features built around React. Without the plugin, there are a few limitations:
+
+1. You must have [source maps](https://web.dev/articles/source-maps) enabled
+2. You will be able to inspect only client-rendered components
+3. The agents will be more limited in their ability to scope out the component you are looking at
+
 
 ## How to use
 
 Run your client-side rendered app on a local dev server.
 
-If you enabled this feature, you will see a the browser icon in the assistant view top-right actions. Click it, and insert the localhost url and port of your dev server in the command palette that opens.
+Click the browser icon in the assistant view top-right actions, and insert the localhost url and port of your dev server in the command palette that opens.
+
+![Assistant actions after enabling the feature](../../../assets/devtools/feature_enabled.png)
 
 Make sure you are opening a dev server from the relevant workspace (e.g.: if your portfolio project is being served locally, make sure to open the portfolio workspace on Aide.). The devtools may return relative paths that work only when the correct workspace is open. 
 
@@ -56,13 +61,3 @@ At this point, if the devtools pick up React, you will see an inspect icon in th
 
 > The context attachemnts when the devtools are connected
 
-## Known issues
-
-We currently use the symbolicated source of a component in order to find the file on the system that corresponds to the React component, and the line range of what part of the underlying JSX was actually clicked.
-This has a few implications:
-
-1. A [source map](https://web.dev/articles/source-maps) needs to be present in order to get get the symbolicated source of a React component.
-2. The app needs to be client-rendered, since we currently can't easily get the path of a server component.
-3. You will have to navigate using URLs in the web view instead of clicking around your app links.
-
-We know these are hard limitations, but we are working to remove them and improve both your experience and the value you can get out of this feature.
